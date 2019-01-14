@@ -11,7 +11,7 @@ class TypeList extends Component {
             );
         })
         return (
-            <ul>
+            <ul className="Poke_types-list">
                  {poke_li}       
             </ul>
         );

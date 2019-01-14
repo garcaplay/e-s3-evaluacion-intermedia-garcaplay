@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './components/stylesheets/App.scss';
 import PokeList from './components/PokeList';
 
 const pokeArray = [

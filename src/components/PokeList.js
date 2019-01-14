@@ -6,8 +6,8 @@ class PokeList extends Component {
         const {pokeArray} = this.props;
         const poke_li = pokeArray.map((poke, key) => {
             return(
-                <li className="Cards_list-item" key = {key}>
-                    <img src={poke.url} alt="" className="Poke_img"></img>
+                <li className="Cards_list-item" key = {key} id = {poke.id}>
+                    <img src={poke.url} alt={poke.name} className="Poke_img"></img>
                     <h2 className="Poke_name">{poke.name}</h2>
                     
                     <TypeList poke = {poke} />
