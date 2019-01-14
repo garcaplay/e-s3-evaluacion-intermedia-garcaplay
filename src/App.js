@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import PokeList from './components/PokeList';
 
 const pokeArray = [
     {"id":1,"name":"bulbasaur","types":["poison","grass"],"evolution":null,"url":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"},
@@ -22,15 +23,7 @@ class App extends Component {
           <div className="Cards_header">
             <h1 className="Cards_header-title">PokeCartas</h1>
           </div>
-          <ul className="Cards_list">
-            <li className="Cards_list-item">
-              <img src={pokeArray[0].url} alt="" className="Poke_img"></img>
-              <h2 className="Poke_name">{pokeArray[0].name}</h2>
-              <ul className="Poke_types-list">
-                <li className="Poke_types-item">{pokeArray[0].types[0]}</li>
-              </ul>
-            </li>
-          </ul>
+          < PokeList pokeArray = {pokeArray}/>
         </div>
       </div>
     );
