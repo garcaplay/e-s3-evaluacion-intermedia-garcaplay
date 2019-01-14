@@ -1,13 +1,77 @@
 .App {
-  
+  box-sizing: border-box;
 }
 
-.Cards{}
-.Cards_header{}
-.Cards_header-title{}
-.Cards_list-item{}
-.Poke_img{}
-.Poke_name{}
-.Cards_list{}
-.Poke_types-item{}
-.Poke_types-list{}
+.Cards_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cards_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.Cards_list-item{
+    width: 160px;
+    list-style-type: none;
+    background-color: rgb(197, 231, 242);
+    border: 2px solid grey;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.Poke_img-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Poke_img{
+    height: 160px; 
+}
+
+.Poke_name-box{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid grey;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.Poke_name{
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.Poke_types-list{
+    border: 2px solid grey;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 20px;
+    padding: 5px 5px;
+}
+
+.Poke_types-item{
+    list-style-type: none;
+    padding-left: 5px;
+    font-size: 12px;
+    .item{
+        display: inline;
+        padding: 2px 5px;
+        background-color: grey;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 5px;
+    }  
+}
+

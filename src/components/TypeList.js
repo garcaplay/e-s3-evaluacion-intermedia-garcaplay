@@ -6,7 +6,7 @@ class TypeList extends Component {
         const poke_li = poke.types.map((type, key) =>{
             return(
                 <li className="Poke_types-item" key={key}>
-                {type}
+                <p className="item">{type}</p>
                 </li>
             );
         })
