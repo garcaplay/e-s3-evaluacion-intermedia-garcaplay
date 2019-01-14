@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import TypeList from './TypeList';
+import PropTypes from 'prop-types';
 
 class Pokemon extends Component {
     render() {
@@ -22,6 +23,10 @@ class Pokemon extends Component {
             </Fragment>
         );
     }
+  }
+
+  Pokemon.propTypes = {
+      pokeArray: PropTypes.array,
   }
   
   export default Pokemon;
