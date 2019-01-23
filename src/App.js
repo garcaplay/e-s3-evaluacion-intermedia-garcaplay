@@ -21,7 +21,7 @@ class App extends Component {
       <div className="App">
         <div className="Cards">
           <div className="Cards_header">
-            <h1 className="Cards_header-title">PokeCartas</h1>
+            <h1 className="Cards_header-title">My Pokemon list</h1>
           </div>
           < PokeList pokeArray = {pokeArray}/>
         </div>
